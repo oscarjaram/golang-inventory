@@ -1,15 +1,3 @@
-# Clone repository
-git clone https://github.com/oscarjaram/golang-inventory.git
-cd golang-inventory
-
-# Inicializar proyecto
-go mod init github.com/oscarjaram/golang-inventory
-
-# Importar librerias
-go get gopkg.in/yaml.v3
-
-go get go.uber.org/fx    # Libreria para la inyección de dependencias
-
 # Importante: Estructura de proyecto similar a Clean Architecture / Domain Driven Design
 # Se divide app en capas que heredan desde capa más baja hasta capa más alta
 
@@ -42,4 +30,3 @@ echo "package service" >> internal/service/service.go
 mkdir internal/api
 touch internal/api/api.go
 echo "package api" >> internal/api/api.go
-
